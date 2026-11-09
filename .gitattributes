@@ -1,0 +1,7 @@
+# Скрипти Windows зберігаються байт у байт: UTF-8 з BOM і переносами CRLF.
+# Без цього PowerShell 5.1 ламає кирилицю, а .bat можуть не запускатися.
+*.ps1 -text
+*.bat -text
+*.cmd -text
+
+*.md  text eol=lf
